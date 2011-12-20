@@ -2,6 +2,10 @@ Allows only valid characters (i.e. numbers) to be typed into a text box. Can tak
 
 I am not an owner of a source code. I just created a nuget package to keep all dependencies in nuget. All the credit goes to http://www.texotela.co.uk/.
 
+I decided to fork, because Author do not anwser emails, and seems to not be interested in a project any more.
+
+Feel free to contact me in order to fix some bugs or add features.
+
 In order to run it place:
 <script type="text/javascript">
      $(".numeric").numeric();
