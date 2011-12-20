@@ -6,10 +6,10 @@ I decided to fork, because Author do not anwser emails, and seems to not be inte
 
 Feel free to contact me in order to fix some bugs or add features.
 
-In order to run it place:
+In order to run it place in a view:
 <script type="text/javascript">
-     $(".numeric").numeric();
-     $(".integer").numeric(false, function() { alert("Tylko cyfry"); this.value = ""; this.focus(); });
-     $(".positive").numeric({ negative: false }, function() { alert("Tylko dodatnie cyfry"); this.value = ""; this.focus(); });
-     $(".positive-integer").numeric({ decimal: false, negative: false }, function() { alert("Tylko nieujemne cyfry"); this.value = ""; this.focus(); });
+    $(".numeric").numeric();
+	$(".integer").numeric(false, function() { alert("Integers only"); this.value = ""; this.focus(); });
+	$(".positive").numeric({ negative: false }, function() { alert("No negative values"); this.value = ""; this.focus(); });
+	$(".positive-integer").numeric({ decimal: false, negative: false }, function() { alert("Positive integers only"); this.value = ""; this.focus(); });
 </script>
