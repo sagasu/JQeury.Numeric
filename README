@@ -1,0 +1,11 @@
+Allows only valid characters (i.e. numbers) to be typed into a text box. Can take negative numbers and a decimal point. You can supply a callback that runs when focus is lost and the value in the text box is not a valid number.
+
+I am not an owner of a source code. I just created a nuget package to keep all dependencies in nuget. All the credit goes to http://www.texotela.co.uk/.
+
+In order to run it place:
+<script type="text/javascript">
+     $(".numeric").numeric();
+     $(".integer").numeric(false, function() { alert("Tylko cyfry"); this.value = ""; this.focus(); });
+     $(".positive").numeric({ negative: false }, function() { alert("Tylko dodatnie cyfry"); this.value = ""; this.focus(); });
+     $(".positive-integer").numeric({ decimal: false, negative: false }, function() { alert("Tylko nieujemne cyfry"); this.value = ""; this.focus(); });
+</script>
